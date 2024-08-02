@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+<title>GeeksforGeeks</title> 
+</head> 
+
+<body> 
+
+	<h1 style="color:forestgreen" th:text="${Controller1}">attributeValue will be placed here</h1> 
+	<h1 style="color:forestgreen" th:text="${Controller2}">attributeValue will be placed here</h1> 
+	<h2 style="color:forestgreen" th:text="${message}"> attributeValue will be placed here </h2> 
+
+	<form method="POST" th:object="${userModel}"> 
+
+			<label for="userText">Type Message : </label><br/> 
+			<input type="text" th:field="*{userText}"/> 
+
+			<input type="submit" value="Go"/> 
+
+	</form > 
+
+</body> 
+</html>
